@@ -1,23 +1,21 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:sorteos_app/models/sorteo.dart';
 
 class HomeScreen extends StatelessWidget {
-  final raffles = [
-    Sorteo(1, "Moto electrica", DateTime(2022, 6, 10), "fb"),
-    Sorteo(1, "Coche", DateTime(2022, 6, 10), "twt"),
-    Sorteo(1, "Iphone 14", DateTime(2022, 6, 10), "ig"),
-    Sorteo(1, "Pack chocolates", DateTime(2022, 6, 10), "fb"),
-    Sorteo(1, "Otra cosa", DateTime(2022, 6, 10), "twt"),
-    Sorteo(1, "Sorteo madison", DateTime(2022, 6, 10), "ig"),
-    Sorteo(1, "Pepino", DateTime(2022, 6, 10), "lol"),
-    Sorteo(1, "Entrada discoteca", DateTime(2022, 6, 10), "ig"),
-    Sorteo(1, "Vipaso en cocoa", DateTime(2022, 6, 10), "fb"),
-    Sorteo(1, "Pico de madera", DateTime(2022, 6, 10), "twt"),
-    Sorteo(1, "4g de Hashesh", DateTime(2022, 6, 10), "lol"),
+  static final raffles = [
+    Sorteo("1", "Moto electrica", DateTime(2022, 6, 10), "fb"),
+    Sorteo("1", "Coche", DateTime(2022, 6, 10), "twt"),
+    Sorteo("1", "Iphone 14", DateTime(2022, 6, 10), "ig"),
+    Sorteo("1", "Pack chocolates", DateTime(2022, 6, 10), "fb"),
+    Sorteo("1", "Otra cosa", DateTime(2022, 6, 10), "twt"),
+    Sorteo("1", "Sorteo madison", DateTime(2022, 6, 10), "ig"),
+    Sorteo("1", "Pepino", DateTime(2022, 6, 10), "lol"),
+    Sorteo("1", "Entrada discoteca", DateTime(2022, 6, 10), "ig"),
+    Sorteo("1", "Vipaso en cocoa", DateTime(2022, 6, 10), "fb"),
+    Sorteo("1", "Pico de madera", DateTime(2022, 6, 10), "twt"),
+    Sorteo("1", "4g de Hashesh", DateTime(2022, 6, 10), "lol"),
   ];
 
   @override
@@ -127,7 +125,7 @@ class _RaffleItem extends StatelessWidget {
 Color _selectColor(String type, int shade) {
   switch (type) {
     case 'ig':
-      return Colors.teal[shade]!;
+      return Colors.pink[shade]!;
 
     case 'twt':
       return Colors.blue[shade]!;

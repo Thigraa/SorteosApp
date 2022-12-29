@@ -1,9 +1,10 @@
 class Sorteo {
-  final int id;
+  final String id;
   final String title;
   final DateTime? date;
   final String type;
   final following = [];
+  final steps = [];
 
   Sorteo(this.id, this.title, this.date, this.type);
 
